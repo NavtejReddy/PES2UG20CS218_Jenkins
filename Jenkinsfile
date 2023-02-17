@@ -4,13 +4,13 @@
   stages {
     stage('Build') {
       steps {
-        sh 'g++ -o PES2UG20CS009 PES2UG20CS009.cpp'
+        sh 'g++ -o PES2UG20CS218 PES2UG20CS218.cpp'
         echo 'Build stage successful'
       }
     }
     stage('Test') {
       steps {
-        sh './PES2UG20CS009'
+        sh './PES2UG20CS218'
         echo 'Test stage successful'
       }
     }
