@@ -6,7 +6,8 @@
       steps {
         sh 'g++ -o PES2UG20CS218 PES2UG20CS218.cpp'
         echo 'Build stage successful'
-     
+      }
+    }
     stage('Test') {
       steps {
         sh './PES2UG20CS218'
@@ -14,7 +15,7 @@
       }
     }
     stage('Deploy') {
-
+      steps {
         sh 'echo "Deploying..."'
         echo 'Deployment successful'
       }
